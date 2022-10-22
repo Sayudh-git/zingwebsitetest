@@ -9,9 +9,9 @@ import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import zingTitle from "../public/assets/zingTitle.svg";
 import Link from "next/link";
 import SlideShow from "../components/Home/SlideShow";
-import twitter from "../public/assets/socials/twitter.png";
-import linkedin from "../public/assets/socials/linkedin.png";
-import instagram from "../public/assets/socials/instagram.png";
+import twitter from "../public/assets/socials/twitter.svg";
+import linkedin from "../public/assets/socials/linkedin.svg";
+import instagram from "../public/assets/socials/instagram.svg";
 
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
         </header>
 
         <div
-          className="absolute w-screen top-[45%] z-30
+          className="absolute w-screen top-[40%] md:top-[42%] z-30
         before:content-[''] before:w-[85%] before:left-1/2 before:-translate-x-1/2 before:-translate-y-[20px] md:before:-translate-y-[35px] before:h-[2px] before:absolute before:bg-white before:z-30
         after:content-[''] after:w-[85%] after:left-1/2 after:-translate-x-1/2 after:translate-y-[20px] md:after:translate-y-[35px] after:h-[2px] after:absolute after:bg-white after:z-30"
         >
@@ -75,13 +75,13 @@ export default function Home() {
             className="text-white flex justify-center font-medium text-lg md:xl mt-[70px] md:mt-6
          cursor-pointer "
           >
-            <Link href="http://careers.zingnow.in" passHref>
+            <Link href="https://twitter.com/zing_now" passHref>
               <a target="_blank" rel="noopener noreferrer">
                 <Image src={twitter} alt="twitter" width={30} height={30} />
               </a>
             </Link>
 
-            <Link href="http://careers.zingnow.in" passHref>
+            <Link href="https://www.instagram.com/zingnow/" passHref>
               <a
                 target="_blank"
                 rel="noopener noreferrer"

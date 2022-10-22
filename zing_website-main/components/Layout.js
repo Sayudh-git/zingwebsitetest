@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import zingBg from "../public/assets/zing-background.svg";
+
 function Layout({ children }) {
   return (
-    <div>
+    <div className="absolute w-full h-full overflow-hidden">
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
