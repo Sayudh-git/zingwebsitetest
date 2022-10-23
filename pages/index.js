@@ -12,10 +12,12 @@ import SlideShow from "../components/Home/SlideShow";
 import twitter from "../public/assets/socials/twitter.svg";
 import linkedin from "../public/assets/socials/linkedin.svg";
 import instagram from "../public/assets/socials/instagram.svg";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
   return (
-    <div>
+    <div className="absolute w-full h-full overflow-hidden bg-[url('/assets/zing-background.svg')] bg-cover md:bg-contain">
       <Head>
         <title>Zing - Preorder food takeaway</title>
       </Head>
@@ -44,8 +46,13 @@ export default function Home() {
             className="text-5xl md:text-7xl font-medium text-white overflow-hidden"
           >
             <p className="ml-4 tracking-wide">
-              <span className="text-zing-orange ">SKIP</span> THE QUEUE.
-              <span className="text-zing-orange "> COLLECT</span> YOUR FOOD.
+              <span className="text-zing-orange font-semibold">SKIP</span> THE
+              QUEUE.
+              <span className="text-zing-orange font-semibold">
+                {" "}
+                COLLECT
+              </span>{" "}
+              YOUR FOOD.
             </p>
           </Marquee>
         </div>
@@ -110,11 +117,11 @@ export default function Home() {
                 Restaurants{" "}
               </a>
             </Link>
-            <Link href="http://careers.zingnow.in" passHref>
+            <div onClick={() => router.push("/legal")}>
               <a target="_blank" rel="noopener noreferrer">
                 Legal
               </a>
-            </Link>
+            </div>
           </div>
         </div>
       </section>
