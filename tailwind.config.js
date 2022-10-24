@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         zing: {
           orange: "#FE834F",
-          black: "#2C2A2A",
+          black: "#1C1C1C",
           offWhite: "#FFF4EA",
           green: "#15BE77",
         },

@@ -97,7 +97,7 @@ export default function Home() {
                 <Image src={instagram} alt="twitter" width={30} height={30} />
               </a>
             </Link>
-            <Link href="http://careers.zingnow.in" passHref>
+            <Link href="https://www.linkedin.com/company/zingindia/" passHref>
               <a target="_blank" rel="noopener noreferrer">
                 <Image src={linkedin} alt="twitter" width={30} height={30} />
               </a>
@@ -112,7 +112,7 @@ export default function Home() {
                 Careers{" "}
               </a>
             </Link>
-            <Link href="http://careers.zingnow.in" passHref>
+            <Link href="https://0owqe9mfaff.typeform.com/to/dv5erRgq" passHref>
               <a target="_blank" rel="noopener noreferrer">
                 Restaurants{" "}
               </a>
