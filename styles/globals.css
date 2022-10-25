@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  html, body {
-    font-family: 'Clash Display',sans-serif;
+  html,
+  body {
+    font-family: "Clash Display", sans-serif;
   }
 }
 
@@ -14,10 +15,10 @@ body {
   margin: 0;
 }
 a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

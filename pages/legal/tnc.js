@@ -1,8 +1,11 @@
 import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 function Tnc() {
+  const router = useRouter();
+
   const heading = "font-semibold text-xl";
   const para =
     "mb-8 text-black text-opacity-70 font-medium leading-relaxed text-lg";
@@ -362,14 +365,17 @@ function Tnc() {
             </p>
           </div>
         </div>
-        <div className="max-w-6xl items-center mx-auto pl-3 mt-10 ">
+        <div
+          className="max-w-6xl items-center mx-auto pl-3 mt-10"
+          onClick={() => router.back()}
+        >
           <Link href="/" passHref>
             <a
               rel="noopener noreferrer"
               className="flex items-center text-white py-4 px-7 w-40 font-semibold rounded-md shadow-6xl focus:ring focus:ring-gray-500 bg-zing-green hover:bg-green-400 transition ease-in-out duration-200 tracking-wide"
             >
               <ArrowLeftIcon className="w-6 h-6 mr-2" />
-              Home
+              Back
             </a>
           </Link>
         </div>

@@ -22,9 +22,8 @@ function Legal() {
                 <h3 className="mb-4 text-4xl text-white font-semibold leading-snug">
                   Privacy Policy
                 </h3>
-                <p className="mb-8 text-white text-opacity-70 font-medium leading-relaxed truncate">
-                  BlitzBee Ptv. Ltd. (“we/us/our“) are committed to protecting
-                  and respecting your privacy.
+                <p className="mb-8 text-white text-opacity-70 font-medium leading-relaxed ">
+                  Here is our privacy statement.
                 </p>
                 <div className="md:max-w-max">
                   <button
@@ -43,11 +42,10 @@ function Legal() {
             <div className="flex flex-col justify-end p-10 h-full bg-zing-orange rounded-md">
               <div>
                 <h3 className="mb-4 text-4xl text-white font-semibold leading-snug">
-                  T n C
+                  Terms of Use
                 </h3>
-                <p className="mb-8 text-white text-opacity-70 font-medium leading-relaxed truncate">
-                  Zing is licensed to You (End-User) by BlitzBee Ptv. Ltd. ,
-                  located and registered at Kolkata, West Bengal India.
+                <p className="mb-8 text-white text-opacity-70 font-medium leading-relaxed ">
+                  Here are our terms and conditions.
                 </p>
                 <div className="md:max-w-max">
                   <button
@@ -68,9 +66,8 @@ function Legal() {
                 <h3 className="mb-4 text-4xl text-white font-semibold leading-snug">
                   About Us
                 </h3>
-                <p className="mb-8 text-white text-opacity-70 font-medium leading-relaxed truncate">
-                  We created the Zing app out of the frustrations with queueing
-                  we share.
+                <p className="mb-8 text-white text-opacity-70 font-medium leading-relaxed ">
+                  This is about Zing.
                 </p>
                 <div className="md:max-w-max">
                   <button
@@ -85,14 +82,17 @@ function Legal() {
             </div>
           </div>
         </div>
-        <div className="max-w-6xl items-center mx-auto pl-3 mt-10 ">
+        <div
+          className="max-w-6xl items-center mx-auto pl-3 mt-10"
+          onClick={() => router.back()}
+        >
           <Link href="/" passHref>
             <a
               rel="noopener noreferrer"
               className="flex items-center text-white py-4 px-7 w-40 font-semibold rounded-md shadow-6xl focus:ring focus:ring-gray-500 bg-zing-green hover:bg-green-400 transition ease-in-out duration-200 tracking-wide"
             >
               <ArrowLeftIcon className="w-6 h-6 mr-2" />
-              Home
+              Back
             </a>
           </Link>
         </div>

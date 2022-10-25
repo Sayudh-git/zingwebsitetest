@@ -1,5 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import { ArrowLeftIcon } from "@heroicons/react/24/solid";
+import {
+  ArrowLeftIcon,
+  ArrowTopRightOnSquareIcon,
+  ArrowUpRightIcon,
+} from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -51,28 +55,31 @@ function About() {
                 <p className="mb-2 text-opacity-70 font-medium leading-relaxed text-md">
                   Follow us
                 </p>
-                <div className="cursor-pointer">
+                <div className="cursor-pointer underline underline-offset-[4px]">
                   <p
-                    className="mb-2 text-opacity-70 font-medium leading-relaxed text-lg"
+                    className="mb-2 text-opacity-70 font-medium leading-relaxed text-lg flex items-center"
                     onClick={() => router.push("https://twitter.com/zing_now")}
                   >
                     Twitter
+                    <ArrowUpRightIcon className="w-4 h-4 " />
                   </p>
                   <p
-                    className="mb-2 text-opacity-70 font-medium leading-relaxed text-lg"
+                    className="mb-2 text-opacity-70 font-medium leading-relaxed text-lg flex items-center"
                     onClick={() =>
                       router.push("https://www.linkedin.com/company/zingindia/")
                     }
                   >
                     Linkedin
+                    <ArrowUpRightIcon className="w-4 h-4 " />
                   </p>
                   <p
-                    className="mb-2 text-opacity-70 font-medium leading-relaxed text-lg"
+                    className="mb-2 text-opacity-70 font-medium leading-relaxed text-lg flex items-center"
                     onClick={() =>
                       router.push("https://www.instagram.com/zingnow/")
                     }
                   >
                     Instagram
+                    <ArrowUpRightIcon className="w-4 h-4 " />
                   </p>
                 </div>
               </div>
@@ -80,14 +87,17 @@ function About() {
           </div>
         </div>
 
-        <div className="max-w-6xl items-center mx-auto pl-3 mt-10 ">
+        <div
+          className="max-w-6xl items-center mx-auto pl-3 mt-10"
+          onClick={() => router.back()}
+        >
           <Link href="/" passHref>
             <a
               rel="noopener noreferrer"
               className="flex items-center text-white py-4 px-7 w-40 font-semibold rounded-md shadow-6xl focus:ring focus:ring-gray-500 bg-zing-green hover:bg-green-400 transition ease-in-out duration-200 tracking-wide"
             >
               <ArrowLeftIcon className="w-6 h-6 mr-2" />
-              Home
+              Back
             </a>
           </Link>
         </div>

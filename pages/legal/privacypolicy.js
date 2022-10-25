@@ -1,5 +1,6 @@
 import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 const heading = "font-semibold text-xl";
@@ -7,6 +8,7 @@ const para =
   "mb-8 text-black text-opacity-70 font-medium leading-relaxed text-lg";
 
 function Privacypolicy() {
+  const router = useRouter();
   return (
     <section className="py-5 md:py-20 bg-white overflow-hidden">
       <div className="container px-4 mx-auto">
@@ -149,7 +151,7 @@ function Privacypolicy() {
               party for such purposes. You can exercise your right to prevent
               such processing by checking certain boxes on the forms we use to
               collect your data. You can also exercise the right at any time by
-              contacting us at hello@tryZing.com. Our site may, from time to
+              contacting us at hello@zingnow.in. Our site may, from time to
               time, contain links to and from the websites of our partner
               networks, advertisers and affiliates. If you follow a link to any
               of these websites, please note that these websites have their own
@@ -174,14 +176,17 @@ function Privacypolicy() {
             </p>
           </div>
         </div>
-        <div className="max-w-6xl items-center mx-auto pl-3 mt-10 ">
+        <div
+          className="max-w-6xl items-center mx-auto pl-3 mt-10"
+          onClick={() => router.back()}
+        >
           <Link href="/" passHref>
             <a
               rel="noopener noreferrer"
               className="flex items-center text-white py-4 px-7 w-40 font-semibold rounded-md shadow-6xl focus:ring focus:ring-gray-500 bg-zing-green hover:bg-green-400 transition ease-in-out duration-200 tracking-wide"
             >
               <ArrowLeftIcon className="w-6 h-6 mr-2" />
-              Home
+              Back
             </a>
           </Link>
         </div>

@@ -1,9 +1,5 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/legal": "pages/legal.js",
-  "/legal/about": "pages/legal/about.js",
-  "/": "pages/index.js",
-  "/legal/tnc": "pages/legal/tnc.js"
+  "/_document": "pages/_document.js"
 }

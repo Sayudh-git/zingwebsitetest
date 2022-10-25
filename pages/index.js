@@ -17,7 +17,7 @@ import { useRouter } from "next/router";
 export default function Home() {
   const router = useRouter();
   return (
-    <div className="absolute w-full h-full overflow-hidden bg-[url('/assets/zing-background.svg')] bg-cover md:bg-contain">
+    <div className="absolute w-full h-full overflow-x-hidden bg-[url('/assets/zing-background.svg')] bg-cover md:bg-contain">
       <Head>
         <title>Zing - Preorder food takeaway</title>
       </Head>
@@ -46,13 +46,10 @@ export default function Home() {
             className="text-5xl md:text-7xl font-medium text-white overflow-hidden"
           >
             <p className="ml-4 tracking-wide">
-              <span className="text-zing-orange font-semibold">SKIP</span> THE
+              <span className="text-zing-orange font-semibold"> PREORDER</span>{" "}
+              WITH ZING.
+              <span className="text-zing-orange font-semibold"> SKIP</span> THE
               QUEUE.
-              <span className="text-zing-orange font-semibold">
-                {" "}
-                COLLECT
-              </span>{" "}
-              YOUR FOOD.
             </p>
           </Marquee>
         </div>
@@ -105,7 +102,7 @@ export default function Home() {
           </div>
           <div
             className="text-white flex justify-evenly font-medium text-lg md:xl
-        mt-[30px] md:mt-2 cursor-pointer "
+        mt-[30px] md:mt-2 cursor-pointer mb-8"
           >
             <Link href="http://careers.zingnow.in" passHref>
               <a target="_blank" rel="noopener noreferrer">
